@@ -303,18 +303,31 @@ body {
     background-color: #333;
     display: flex;
     line-height: 5px;
-    padding: 50px 80px;
+    padding: 50px 50px;
     color: #888;
-    font-size: 18px;
+    font-size: 17px;
     justify-content: space-between;
 }
 .bot{
     width: 350px;
 }
+.nav-hide-usr {
+    height: 100%;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    border-left: solid 1px #444;
+    display: none;
+}
 
 @media only screen and (max-width: 1000px) {
     .navbar {
         height: 62px;
+    }
+    .nav-hide-usr {
+        display: flex;
     }
     .nav-options {
         display: none;
@@ -333,9 +346,29 @@ body {
         font-size: 18px;
         background-color: #222;
     }
+    .nav-signin {
+        display: none;
+    }
+    .nav-cart {
+        width: 64px;
+        font-size: 18px;
+    }
+    .kerrt {
+        display: none;
+    }
     .bottoms {
         flex-direction: column;
         align-items: center;
+    }
+    .bot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        margin: 0px;
+    }
+    .bot p {
+        margin: 0;
     }
     .b-hide {
         display: none;
