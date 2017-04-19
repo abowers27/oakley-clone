@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.navbar {
+    width: 100%;
+    height: 42px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+.nav-left {
+    display: flex;
+    height: 100%;
+    width: 500px;
+    align-items: center;
+    color: #aaa;
+    font-size: 13px;
+}
+.nav-logo {
+    height: 20px;
+    margin: 0 20px;
+}
+.nav-options {
+    margin-left: 7px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-option {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-right: 20px;
+}
+.nav-option:hover {
+    color: #eee;
+    cursor: pointer;
+}
+.nav-margin {
+    margin-left: 6px;
+}
+.nav-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-srch {
+    height: 100%;
+    width: 230px;
+    background-color: #555;
+    display: flex;
+    align-items: center;
+}
+.nav-innersrch {
+    border: none;
+    color: white;
+    padding-left: 16px;
+    height: 100%;
+    width: 190px;
+    background-color: #555;
+    font-size: 13px;
+}
+.nav-innersrch:focus {
+    outline: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+  font-weight: 100;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+  font-weight: 100;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+  font-weight: 100;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+  font-weight: 100;
+}
+.nav-innerbtn {
+    height: 100%;
+    width: 40px;
+    border: none;
+    color: white;
+    background-color: #555;
+    font-size: 13px;
+}
+.nav-signin {
+    height: 100%;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 12px;
+}
+.nav-signin:hover {
+    color: #eee;
+    cursor: pointer;
+}
+.nav-cart {
+    width: 105px;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+.owl-carousel {
+    margin-top: 42px;
+}
+.men-options {
+    position: absolute;
+    width: 100vw;
+    height: 375px;
+    background-color: white;
+    z-index: 5;
+    top: 42px;
+    left: 0;
+    display: none;
+    color: #bbb;
+    justify-content: center;
+    padding-top: 30px;
+    line-height: 14px;
+}
+.men-options p:hover {
+    text-decoration: underline;
+}
+.men-options h4:hover {
+    text-decoration: underline;
+}
+.mans:hover .men-options {
+    display: flex;
+}
+.women-options {
+    position: absolute;
+    width: 100vw;
+    height: 350px;
+    background-color: white;
+    z-index: 5;
+    top: 42px;
+    left: 0;
+    display: none;
+    color: #bbb;
+    justify-content: center;
+    padding-top: 30px;
+    line-height: 14px;
+}
+.womans:hover .women-options {
+    display: flex;
+}
+.custom-options {
+    position: absolute;
+    width: 100vw;
+    height: 500px;
+    background-color: white;
+    z-index: 5;
+    top: 42px;
+    left: 0;
+    display: none;
+    color: #bbb;
+    justify-content: center;
+    line-height: 14px;
+    padding-top: 30px;
+}
+.customs:hover .custom-options {
+    display: flex;
+}
+.customs-left {
+    padding-right: 50px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.cust-l-up {
+    display: flex;
+    align-items: center;
+    color: black;
+    width: 70%;
+    position: relative;
+}
+.line {
+    height: 1px;
+    width: 72%;
+    background-color: #ccc;
+    position: relative;
+    top: 5px;
+    margin: 0 8px;
+}
+.cust-l-mid {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.cust-obj {
+    width: 45%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cust-obj img {
+    width: 100%;
+}
+.customs-right {
+    padding-left: 50px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sb-men-opt {
+    width: 200px;
+}
+.sun-men-opt {
+    width: 200px;
+}
+.eye-men-opt {
+    width: 200px;
+}
+.gog-men-opt {
+    width: 200px;
+}
+.ap-men-opt {
+    width: 200px;
+}
+.acc-men-opt {
+    width: 200px;
+}
+.sun-wom-opt {
+    width: 200px;
+}
+.eye-wom-opt {
+    width: 200px;
+}
+.gog-wom-opt {
+    width: 200px;
+}
+.ap-wom-opt {
+    width: 200px;
+}
+.acc-wom-opt {
+    width: 200px;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: 35vw;
+}
+.three-highlights {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    align-items: center;
+}
+.hi {
+    width: 28%;
+    height: 80%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    line-height: 0px;
+    font-size: 1em;
+}
+.ones {
+    background: url('clearance.png') no-repeat center;
+    background-size: cover;
+}
+.twos {
+    background: url('custom.png') no-repeat center;
+    background-size: cover;
+}
+.threes {
+    background: url('new.png') no-repeat center;
+    background-size: cover;
+}
+.bottoms {
+    width: 100%;
+    height: 500px;
+    background-color: #333;
+    display: flex;
+    line-height: 5px;
+    padding: 50px 80px;
+    color: #888;
+    font-size: 18px;
+    justify-content: space-between;
+}
+.bot{
+    width: 350px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        height: 62px;
+    }
+    .nav-options {
+        display: none;
+    }
+    .nav-srch {
+        width: 60px;
+        justify-content: center;
+        border-left: solid 1px #444;
+        background-color: #222;
+    }
+    .nav-srch input {
+        display: none;
+    }
+    .nav-innerbtn {
+        width: 100%;
+        font-size: 18px;
+        background-color: #222;
+    }
+    .bottoms {
+        flex-direction: column;
+        align-items: center;
+    }
+    .b-hide {
+        display: none;
+    }
+}
