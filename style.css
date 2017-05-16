@@ -335,12 +335,27 @@ body {
 .formzz {
   display: flex;
   margin-bottom: 30px;
+  width: 100%;
+  justify-content: center;
+}
+.formz {
+  display: flex;
+  margin-bottom: 30px;
+  width: 100%;
+  justify-content: flex-start;
+}
+.inputt {
+  height: 40px;
+  margin: 0;
+  border: none;
+  width: 70%;
+  color: black;
 }
 .bs-input {
   height: 40px;
   margin: 0;
   border: none;
-  width: 350px;
+  width: 70%;
   color: black;
 }
 .bs-input:focus {
@@ -349,10 +364,11 @@ body {
 .bs-button {
   height: 40px;
   background-color: #555;
-  color: #777;
+  color: #bbb;
   border: none;
   margin: 0;
   width: 45px;
+  font-size: 20px;
 }
 
 .nav-hide-usr {
