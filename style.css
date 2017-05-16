@@ -147,6 +147,7 @@ body {
 }
 .mans:hover .men-options {
     display: flex;
+    transition: 2s;
 }
 .women-options {
     position: absolute;
@@ -274,9 +275,9 @@ body {
     align-items: center;
 }
 .hi {
-    width: 28%;
-    height: 80%;
-    margin: 15px;
+    width: 29%;
+    height: 260px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,6 +285,9 @@ body {
     color: white;
     line-height: 0px;
     font-size: 1em;
+}
+.hi:hover {
+  cursor: pointer;
 }
 .ones {
     background: url('clearance.png') no-repeat center;
@@ -303,7 +307,7 @@ body {
     background-color: #333;
     display: flex;
     line-height: 5px;
-    padding: 50px 50px;
+    padding: 50px 35px;
     color: #888;
     font-size: 17px;
     justify-content: space-between;
@@ -311,6 +315,46 @@ body {
 .bot{
     width: 350px;
 }
+.wrap {
+  line-height: 20px;
+}
+.b-show {
+  color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  line-height: 1px;
+}
+.bs-line {
+  width: 80%;
+  height: 1px;
+  background-color: #777;
+  margin: 30px 0;
+}
+.formzz {
+  display: flex;
+  margin-bottom: 30px;
+}
+.bs-input {
+  height: 40px;
+  margin: 0;
+  border: none;
+  width: 350px;
+  color: black;
+}
+.bs-input:focus {
+  outline: none;
+}
+.bs-button {
+  height: 40px;
+  background-color: #555;
+  color: #777;
+  border: none;
+  margin: 0;
+  width: 45px;
+}
+
 .nav-hide-usr {
     height: 100%;
     width: 60px;
@@ -359,6 +403,7 @@ body {
     .bottoms {
         flex-direction: column;
         align-items: center;
+        height: 900px;
     }
     .bot {
         display: flex;
@@ -372,5 +417,8 @@ body {
     }
     .b-hide {
         display: none;
+    }
+    .b-show {
+      display: flex;
     }
 }
